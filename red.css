@@ -1,0 +1,31 @@
+.lobster {
+	background-color: red;
+	border: 10px solid black;
+	padding-left: 20px;
+	margin: 15px;
+	height: 600px;
+	width: 800px;
+	color: darkblue;
+	font-family: comic sans ms
+}
+.crab {
+	background-color: grey;
+	border: 10px solid black;
+	padding-left: 20px;
+	margin: 15px;
+	height: 600px;
+	width: 800px;
+	color: maroon;
+	font-family: comic sans ms
+}
+.crab-h2 {
+	border-bottom: 3px solid maroon;
+	width: 50%;
+}
+.lobster-h2 {
+	border-bottom: 3px solid darkblue;
+	width: 50%;
+}
+#shrimp {
+	font-family: comic sans ms;
+}
