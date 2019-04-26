@@ -1,4 +1,4 @@
-
+var hands = ["Rock","Scissors","Paper"];
 var computerChoice = poopla();
 var userChoicer = document.getElementById("RButton").addEventListener("click", function(){
 	var userChoice = "Rock";
@@ -18,14 +18,14 @@ var userChoicep = document.getElementById("PButton").addEventListener("click", f
 		coopla(userChoice, computerChoice);
 });
 
-function poopla(){
-	computerChoice = Math.floor(Math.random() * 9 + 1);
+function poopla(hands){
+	computerChoice = parseInt((Math.random()*10)%3);
 	console.log (computerChoice);
-	if (computerChoice <= 3) {
+	if (computerChoice === 0) {
 	computerChoice = "Rock";
 	console.log ("Rock");
 	}
-	else if (computerChoice <= 6) {
+	else if (computerChoice === 1) {
 		computerChoice = "Scissors";
 		console.log ("Scissors");
 	}
@@ -37,8 +37,8 @@ function poopla(){
 }
 
 
-function coopla(computerChoice,userChoice){
-	if (computerChoice === userChoice) {
+function coopla(userChoice,computerChoice){
+	if (userChoice === computerChoice) {
 		console.log ("It's a TIE!")
 		alert ("It's a TIE!");
 	}
